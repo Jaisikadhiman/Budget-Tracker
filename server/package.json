@@ -7,7 +7,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "author": "Surya D",
+  "author": "Jaisika ",
   "license": "ISC",
   "devDependencies": {
     "bcrypt": "^5.1.0",
