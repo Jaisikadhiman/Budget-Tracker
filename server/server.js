@@ -18,9 +18,9 @@ app.use(express.json()); //parse incoming data
 
 app.use(
     cors({
-      origin: "https://budget-tracker-gray-alpha.vercel.app/", // Replace with your actual frontend URL
-      methods: "GET,POST,PUT,DELETE",
-      credentials: true, // Allow cookies if needed
+      origin: "https://budget-tracker-gray-alpha.vercel.app", // No trailing slash!
+      methods: ["GET", "POST", "PUT", "DELETE"],
+      credentials: true,
     })
   );
 
