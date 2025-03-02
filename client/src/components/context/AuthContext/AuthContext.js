@@ -98,6 +98,7 @@ const AuthContextProvider = ({ children }) => {
       headers: {
         "Content-Type": "application/json",
       },
+      withCredentials: true,
     };
     try {
       const res = await axios.post(
