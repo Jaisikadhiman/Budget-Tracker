@@ -18,7 +18,7 @@ app.use(express.json()); //parse incoming data
 
 app.use(
     cors({
-      origin: "https://budget-tracker-gray-alpha.vercel.app", // No trailing slash!
+      origin: "https://budget-tracker-plum-theta.vercel.app/", // No trailing slash!
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
     })
