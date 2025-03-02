@@ -18,11 +18,12 @@ app.use(express.json()); //parse incoming data
 
 app.use(
     cors({
-      origin: "https://budget-tracker-plum-theta.vercel.app/", // No trailing slash!
-      methods: ["GET", "POST", "PUT", "DELETE"],
-      credentials: true,
+      origin: ["https://budget-tracker-plum-theta.vercel.app", "*"], // Update with your Vercel frontend URL
+      methods: "GET,POST,PUT,DELETE",
+      credentials: true, // Allow cookies if needed
     })
   );
+  
 
 //---------------------------------------
 // ROUTES
