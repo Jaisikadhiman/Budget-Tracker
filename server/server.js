@@ -30,6 +30,11 @@ app.use(
 
 //---  Users route  ---
 // app.use(path, Route)
+
+app.get("/", (req, res) => {
+    res.send("Budget Tracker API is running successfully!");
+  });
+  
 app.use("/api/v1/users", usersRoute);
 
 //---  Accounts route ---
